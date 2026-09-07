@@ -1,19 +1,19 @@
 <header>
-    <nav class="flex justify-between border-4 border-red-600">
-        <ul>
+    <nav class="flex justify-between bg-mainColor text-white p-4">
+        <ul class="flex gap-3">
             <li>
-                Icono
+                <li class="fa-solid fa-book text-2xl"></li>
             </li>
             <li>
                 Survey Rails App.
             </li>
         </ul>
-        <ul>
-            <li>
-                <button>Sign up</button>
+        <ul class="flex gap-3">
+            <li class="bg-signIn rounded">
+                <%= button_to 'Sign up', '#', class: 'py-1 px-4 text-sm text-black font-semibold' %>
             </li>
-            <li>
-                <button>Sign in</button>
+            <li class="bg-signUp rounded">
+                <%= button_to 'Sign in', '#', class: 'py-1 px-4 text-sm text-black font-semibold' %>
             </li>
         </ul>
     </nav>

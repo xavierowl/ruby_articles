@@ -24,3 +24,9 @@ services:
       - redis
     environment:
       - REDIS_URL=redis://redis:6379/
+  css:
+    build: .
+    command: bin/rails tailwindcss:watch[always]
+    volumes:
+    - .:/articles
+    tty: true
